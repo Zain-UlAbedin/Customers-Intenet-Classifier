@@ -22,6 +22,6 @@ Now you will be ready to go.
 ## Run the application
 First you have to change the database authentication and type in settings.py (go to line 77) when that's done do the following
 From terminal go to this folder on your local machine and type
-**python manage.py runserver**
+- **python manage.py runserver**
 
  now you will be good to go.
