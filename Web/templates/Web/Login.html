@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+<style type="text/css">
+
+/* sinppet for button  */
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.snip1582 {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 10px 15px 10px;
+  position: relative;
+  font-weight: normal;
+}
+
+.snip1582:before,
+.snip1582:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.snip1582:before {
+  border-color: purple;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip1582:after {
+  border-bottom-width: 2px;
+  border-color: purple;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+  background-color: purple;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Text fields */
+
+input[type=text] , input[type=password]
+{
+  border-radius: 6px;
+  border: 1px solid purple;
+  padding: 0 0 .5% 2%;
+
+}
+
+input[type=text]:focus
+{
+  color: white;
+  background-color: #ededed;
+  outline: none;
+  color: #4A0352;
+
+}
+input[type=password]:focus
+{
+  color: white;
+  background-color: #ededed;
+  outline: none;
+  color: #4A0352;
+}
+
+
+
+
+
+
+
+.Popup_Loginform
+{
+  display: block;
+  position: fixed;
+  background-color: white;
+  border: 6px solid purple;
+  left:31.5%;
+  right: 35%;
+  margin-top: 2.5%;
+  margin-bottom:10%;
+  z-index: 9;
+  width:35%;
+  text-align: center;
+  height: 90%;
+
+}
+
+.Loginform-container {
+  width:90%;
+  display: inline-block;
+  background-color: white;
+
+}
+</style>
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body onload="check()" style="background-color:#d6d6d6" >
+    <!-- Login Form code -->
+
+
+<div class="Popup_Loginform" id="Log_in"  >
+
+  <form action="Log" method="POST" class="Loginform-container" >
+    {% csrf_token %}
+
+<!--
+    <h1 style=" display: block; text-align: left; font-size: 230%; margin-left: .1%; margin-bottom: 0; margin-top: 4%; font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 3px; color:purple; ">   <b>ahasd</b></h1>
+-->
+
+    <h1 style=" font-family: 'Saira Extra Condensed', sans-serif; font-size: 450%; border:1px solid purple; margin-left: 10%; margin-right: 10%; margin-top: 8%; border-right: transparent; border-top: transparent; border-left: transparent; color: purple;  "> LOG IN </h1>
+    <h1 style="font-family: 'Josefin Slab', serif; font-size: 110%; margin-bottom: 20%;color: purple;">Log In to see the Insight of Customers Reviews</h1>
+
+
+
+    <!-- Email section-->
+    </label>
+    <input type="text" placeholder="Enter Email" name="Log_email" required style="margin-left: .2%; width:94.6%; border-left: transparent; border-top: transparent; border-right: transparent; border-radius: 0px; font-size: 130%; background-color: white; margin-bottom: 14%; margin-top: 8%;">
+
+    <input type="password" placeholder="Enter Password" name="Log_pass" required style="margin-left: .2%; width:94.6%; border-left: transparent; border-top: transparent; border-right: transparent; border-radius: 0px;background-color: white; font-size: 130%; margin-bottom: 4%">
+
+
+    <div style=" color: red; display: block; margin-bottom: 14%; font-size: 70%">
+        {% if messages %}
+        {% for message in messages %}
+            <h1{% if message.tags %} class="{{ message.tags }}"{% endif %} style="font-size: 150%">{{ message }}</h1>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+
+    <div style="display: block; text-align: center; margin-bottom:;">
+        <button  type="submit" class="snip1582" style="background-color: purple; width: 50%; font-size: 150%">Log In</button>
+    </div >
+
+
+  </form>
+</div>
+
+
+
+
+
+ <div style=" float: left; position: relative; margin-top:2%; left:0.3%;">
+    <i class="fas fa-chart-pie" style="font-size:18.7em; color: #B0C4DE; opacity:.7; "></i>
+  </div>
+  <div style="margin-top:30.35%; float:left ; position: relative;">
+    <i class="far fa-file-alt"  style="font-size:11.4em; color:#B0C4DE; opacity: .7;"></i>
+  </div>
+
+
+
+
+
+  <div style="float: right; position: relative; margin-top:-1.0%; right: 0.3%">
+    <i class="fas fa-chart-line"  style="font-size:10em; color:#B0C4DE; opacity: 0.5;"></i>
+  </div>
+  <div style="margin-top:25.35%; float: right; position: relative; right: 3.89%">
+    <i class="fas fa-tasks"  style="font-size:8.7em; color:#B0C4DE; opacity: .8;"></i>
+  </div>
+  <div style="margin-top:8.1%; float: right; margin-right:  2%; position: relative; right:1.23%; ">
+    <i class="fas fa-clipboard-list"  style="font-size:10em; color:#778899; opacity: 0.24;"></i>
+  </div>
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+
+
+
+
+</body>
+</html>

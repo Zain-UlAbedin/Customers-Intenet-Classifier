@@ -1,0 +1,876 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!--<style type="text/css">
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+</style>
+
+
+-->
+
+<style type="text/css">
+
+ul {
+  list-style-type: bengali;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding:0;
+  top:0;
+  left:0;
+  right: 0;
+  overflow: hidden;
+  background-color:   #4A0352;
+}
+
+
+
+/*below is the donwloaded snippet used for navigation button such as home about US  */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: all;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.snip1189 a {
+  padding: .5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1189 a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #c0392b;
+  border-top: 3px solid #c0392b;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.snip1189 a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #c0392b;
+  border-bottom: 3px solid #c0392b;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: #ffffff;
+}
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* sinppet for button  */
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.snip1582 {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 10px 15px 10px;
+  position: relative;
+  font-weight: normal;
+}
+
+.snip1582:before,
+.snip1582:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.snip1582:before {
+  border-color: purple;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip1582:after {
+  border-bottom-width: 2px;
+  border-color: purple;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+  background-color: purple;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/*snippets for footer icons*/
+
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.snip1472 {
+  position: relative;
+  font-size: 40px;
+  color: purple;
+  width: 75px;
+  margin: 40px;
+  height: 75px;
+  line-height: 75px;
+  display: inline-block;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1472:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+.snip1472:before {
+  color: #fff;
+}
+.snip1472:before,
+.snip1472:after {
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.snip1472:hover,
+.snip1472:active,
+.snip1472.hover {
+  color: #4A0352;
+}
+.snip1472:hover:after,
+.snip1472:active:after,
+.snip1472.hover:after {
+  border-color: #4A0352 transparent #4A0352 transparent;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+
+/* Text fields */
+
+input[type=text] , input[type=password]
+{
+  border-radius: 6px;
+  border: 1px solid purple;
+  padding: 0 0 .5% 2%;
+
+}
+
+input[type=text]:focus
+{
+  color: white;
+  background-color: #ededed;
+  outline: none;
+  color: #4A0352;
+
+}
+input[type=password]:focus
+{
+  color: white;
+  background-color: #ededed;
+  outline: none;
+  color: #4A0352;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Below is the code for picture its location and centered headings*/
+
+
+
+h1{
+  text-align: center;
+}
+
+
+
+/* Slide show text code is below*/
+
+
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.item-1,
+.item-2{
+  position:static;
+  font-size: 3em;
+  font-family: 'Rajdhani', sans-serif;
+  padding-bottom: 1.8%;
+
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.item-1{
+  animation-name: anim-1;
+}
+
+.item-2{
+  animation-name: anim-2;
+}
+
+
+/**
+.item-3{
+  animation-name: anim-3;
+}
+
+@keyframes anim-3 {
+  0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+*/
+
+
+
+@keyframes anim-1 {
+  0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+
+}
+
+@keyframes anim-2 {
+  0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+
+
+
+/** Ids foor texts*/
+
+#HomeText
+{
+  font-family:'Rajdhani', sans-serif;
+  color: black;
+  font-size: 3.25em;
+  word-spacing: -0.1em;
+
+}
+#HomePtext
+{
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  font-family:'Rajdhani', sans-serif;
+  color: black;
+  font-size: 2em;
+  word-spacing: -0.1em;
+}
+
+#_2ndDivPText
+{
+  display: block;
+  width: 55%;
+  font-family:'Ubuntu', sans-serif;
+  color: black;
+  font-size: 1.16em;
+  text-align: justify;
+}
+#_2ndDivHText
+{
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  width: 45%;
+  color: black;
+  font-size: 2.2em;
+  text-align: justify;
+}
+
+
+.FooterHeading
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+#footerHead
+{
+  ont-family: 'Ubuntu', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+
+/** Ids for some divs*/
+
+#homeid
+{
+  padding-top: 7%;
+  background-color: white;
+  border-color: purple;
+  text-align: center;
+  border-color:purple;
+  border:1.6px double purple;
+  border-top: transparent;
+  padding-bottom: 8%;
+  border-right: transparent;
+  border-left: transparent;
+  max-width: 100%;
+
+}
+
+#imgDiv
+{
+  padding-top: 7%;
+  text-align: left;
+  border-bottom: thick;
+  border-color:purple;
+  border:2px inset  #DCDCDC;
+  border-top: transparent;
+  padding-bottom: 8%;
+  border-right: transparent;
+  border-left: transparent;
+  max-width: 84%;
+}
+
+#flexID
+{
+  display: flex;
+  align-items: stretch;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+/* IDs for imges*/
+#imgID
+{
+  display: block;
+  float: right;
+  object-fit: contain;
+  margin-top: -18%;
+  max-width: 32.6%;
+}
+
+/*flex Ids*/
+
+.item{
+  width: 100%;
+}
+
+
+
+/*icons script*/
+
+
+/* DIV for PopUp forms for SIGN UP */
+
+.Popup_form
+{
+  display: none;
+  position: fixed;
+  background-color: #f4f4f4;
+  border: 6px solid purple;
+  left:27.5%;
+  right: 27.5%;
+  padding: 1% 4% 1% 4%;
+  margin-top: .5%;
+  margin-bottom:10%;
+  z-index: 9;
+
+}
+
+
+.form-container {
+  max-width: 100%;
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+/* DIV for PopUp forms for LOG IN */
+
+.Popup_Loginform
+{
+  display: none;
+  position: fixed;
+  background-color: #f4f4f4;
+  border: 6px solid purple;
+  left:35%;
+  right: 35%;
+  margin-top: .5%;
+  margin-bottom:10%;
+  z-index: 9;
+  width:30%;
+  text-align: center;
+
+}
+
+.Loginform-container {
+  width:90%;
+  display: inline-block;
+  background-color: #f4f4f4;
+
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: purple;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: purple;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: purple;
+}
+/* Sign In form close icon */
+
+#closeform{
+
+  float: right;
+  margin-right: -10%;
+  margin-top: -3%;
+  color: Purple;
+  font-size: 150%;
+
+}
+
+#closeform:hover{
+  color: red;
+}
+
+
+/* Log In Form close icon */
+
+
+#closeformL{
+
+  float: right;
+  margin-right: 1.5%;
+  margin-top: 0%;
+  color: Purple;
+  font-size: 150%;
+
+}
+
+#closeformL:hover{
+  color: red;
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!  <link rel="stylesheet" type="text/css" href="{% static 'Web/main.css' %}">
+
+
+
+
+</head>
+<body onload="return Loadform()">
+
+
+
+
+<!-- Navigation bar-->
+
+<ul class="snip1189">
+  <li style="padding-left: 25%"><a style="color: white" href="{% url 'Web_home' %}">Home</a></li>
+  <li><a style="color: white" href="{% url 'Web_Contact' %}">Contact</a></li>
+  <li><a class="active" style="color: white" href="{% url 'Web_About' %}" >About</a></li>
+  <li style="float: left; color: white; font-size: 200%" >Cinsights</li>
+  <li style="float: right" onclick="openForm()"><a  style="color: white" o >Register</a></li>
+  <li style="float: right" ><a href="{% url 'Web_LogIn' %}" style="color: white" o >Login</a></li>
+</ul>
+
+
+<!-- Below is the PopUp form for Sign in -->
+
+<div class="Popup_form" id="Pop" >
+  <span id="closeform" onclick="closeForm()">X</span>
+
+  <form action="Create_User" method="POST" class="form-container" >
+    {% csrf_token %}
+
+    <h1 style=" display: block; text-align: left; font-size: 230%; margin-left: .1%; margin-bottom: 0; margin-top: 4%; font-family: 'Saira Extra Condensed', sans-serif; letter-spacing: 3px; color:purple   ">   <b>Welcome to Cinsight</b></h1>
+
+    <h1 style="display: block; margin-left: .1%; text-align: left; font-size: 100%; font-family: 'Josefin Slab', serif; opacity: 0.8; margin-bottom: 15%; color: purple ">
+      Have a Free journey into AI world
+    </h1>
+
+
+
+
+    <!--  Grid for Names-->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 8%;">
+      <div>
+        <label for="Fname" style=" margin-left: .1%; color: purple;"><b>First Name :</b></label>
+        <div>
+          <input type="text" placeholder="Enter First Name" name="Fname" required style="width: 90%; margin-left: .2%" >
+        </div>
+      </div>
+
+      <div>
+        <label for="Lname" style=" float: left; color: purple"><b>Last Name :</b></label>
+        <div>
+          <input type="text" placeholder="Enter Last Name" name="Lname" style=" float: left; width: 90%">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Email section-->
+    <label style=" margin-left: .1%; display: block; color: purple">
+      <b>Email :</b>
+    </label>
+    <input type="text" placeholder="Enter Email" name="email" required style="margin-left: .2%; width:94.6%;">
+    <div style="color: white; color: red; display: block; margin-bottom: 8%; font-size: 70%">{{Error}}</div>
+
+
+    <!-- Grid for Password section-->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 15%;">
+
+      <div>
+        <label for="Pass" style=" margin-left: .1%; color: purple"><b>Password :</b></label>
+        <div>
+          <input type="password" placeholder="Enter Password" name="Pass" id="pass" required style="width: 90%; margin-left: .2%" >
+        </div>
+         <label id="pass_label" style=" display: block; opacity: 0; color: red; font-size: 70% ; margin-left: .7%; margin-bottom: 0%">Password Does not Match</label>
+      </div>
+
+      <div>
+        <label for="Cpass" style=" float: left; color: purple"><b>Confirm Password :</b></label>
+        <div>
+          <input type="password" placeholder="Confirm Password" name="Cpass" id="cpass" required style=" float: left; width: 90%">
+        </div>
+        <label id="cpass_label" style=" display: block; opacity:0; color: red; font-size: 70% ; float: left; margin-bottom: 0%;">Password Does not Match</label>
+      </div>
+
+
+    </div>
+
+
+    <div style="display: block; text-align: center; margin-bottom:;">
+        <button  type="submit" class="snip1582" onclick=" return CheckPassword()" style="background-color: purple; width: 40%">SignUp</button>
+    </div >
+
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+{% block content %} {% endblock %}
+
+
+
+
+
+
+
+
+<!-- Below are the Footer Divs -->
+
+<div class="container" style="background-color: #4A0352; text-align: center; height:62px; color: white">
+
+  SIGN UP FOR A FREE ACCOUNT
+ <button class="snip1582" onclick="openForm()" style="background-color: purple;">SignUp</button>
+
+</div>
+
+
+
+<div id="flexID" class="container" style=" padding-top: 1%; height: 42vh;">
+
+  <!-- Flex Item One -->
+
+  <div class="flex-item" style="flex: 0 50%; position: relative;">
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 6%; margin-left: 49% ;">
+      <ion-icon name="link" style="position: absolute; left:24%; top:23.5%"></ion-icon>
+    </a>
+
+
+
+    <h1 style="position: relative; margin-top: -6.7%; margin-left: 12.5%; font-size: 115%; font-family: 'Cinzel', serif;">LINKS</h1>
+
+
+    <a href="#" class="snip1472" style="position: relative; margin-left: 15%; margin-top: 2%; width: 8%; height: 15%">
+      <h1 style="position: relative; margin-left:-1%; margin-top: 24%; font-size: 42%">Home</h1>
+    </a>
+
+     <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%">
+      <h1 style="position: relative; margin-left:-.5%; margin-top: 24%; font-size: 42%">Demo</h1>
+    </a>
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%">
+      <h1 style="position: relative; margin-left:-3.5%; margin-top: 24%; font-size: 42%">About</h1>
+    </a>
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%">
+      <h1 style="position: relative; margin-left:-20%; margin-top: 24%; font-size: 42%">Contact</h1>
+    </a>
+
+
+
+
+
+
+
+  </div>
+
+
+
+  <!-- Flex item 2 -->
+
+  <div class="flex-item" style=" flex: 0 50%; position: relative;">
+
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 6%; margin-left: 49% ;">
+      <ion-icon name="globe" style="position: absolute; left:24%; top:22.5%"></ion-icon>
+    </a>
+
+
+    <h1 style="position: relative; margin-top: -6.7%; margin-left: 12.5%; font-size: 115%; font-family: 'Cinzel', serif;">SOCIAL</h1>
+
+
+
+
+    <a href="#" class="snip1472" style="position: relative; margin-left: 15%; margin-top: 2%; width: 8%; height: 15%">
+      <ion-icon name="logo-facebook" style="position: relative; margin-left:3.5%; margin-bottom: 26.5%; width: 50%;"></ion-icon> </a>
+
+     <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%">
+      <ion-icon name="logo-instagram" style="position: relative; margin-left:3.5%; margin-bottom: 26.5%; width: 50%;"></ion-icon> </a>
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%;">
+      <ion-icon name="logo-twitter" style="position: relative; margin-left:3.5%; margin-bottom: 26.5%; width: 50%;"></ion-icon> </a>
+
+
+
+    <a href="#" class="snip1472" style="position: relative; margin-top: 2%; width: 8%; height: 15%;">
+        <ion-icon name="logo-google" style="position: relative; margin-left:3.5%; margin-bottom: 26.5%; width: 50%;"></ion-icon> </a>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+
+
+
+
+
+<!-- JAVA SCRIPT code are below -->
+
+<script>
+
+function openForm(theform) {
+  document.getElementById("Pop").style.display = "block";
+}
+
+
+
+function CheckPassword()
+
+{
+
+  var plabel= document.getElementById("pass_label");
+  var clabel= document.getElementById("cpass_label");
+
+  if(document.getElementById("pass").value != document.getElementById("cpass").value )
+  {
+    plabel.style.opacity= 1;
+    clabel.style.opacity= 1;
+
+    return false;
+  }
+  else
+  {
+    plabel.style.opacity= 0;
+    clabel.style.opacity= 0;
+    return true;
+  }
+}
+
+
+function Loadform()
+{
+   var error="{{Error}}"
+   if(error != "")
+   {
+      document.getElementById("Pop").style.display = "block";
+   }
+}
+
+
+function closeForm()
+{
+  document.getElementById("Pop").style.display = "none";
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>

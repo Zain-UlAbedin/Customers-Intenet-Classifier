@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+
+
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: all;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.snip1189 a {
+  padding: .5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1189 a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #c0392b;
+  border-top: 3px solid #c0392b;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.snip1189 a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #c0392b;
+  border-bottom: 3px solid #c0392b;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: #ffffff;
+}
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* Snippet for button*/
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.snip1582 {
+  background-color: #FF7B00;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 10px 15px 10px;
+  position: relative;
+  font-weight: normal;
+}
+
+.snip1582:before,
+.snip1582:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.snip1582:before {
+  border-color: #FF7B00;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip1582:after {
+  border-bottom-width: 2px;
+  border-color: #FF7B00;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+  background-color: purple;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* SIde bar classes*/
+
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+
+}
+
+
+
+/* UserNmae drop down classes*/
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/*File upload css*/
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.custom-file-upload:hover
+{
+    color:#FF7B00;
+}
+
+
+table, td {
+  border: 1px solid purple;
+  border-right: transparent;
+  border-top: transparent;
+  border-left: transparent;
+}
+
+td{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: .4%;
+}
+
+
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+
+
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="sidenav snip1189" style="background-color: #4A0352">
+  <li style="margin-top: 30%; margin-bottom: 20%"><a href="{% url 'Web_home' %}" >Cinsights</a></li>
+
+
+
+  <form action="Upload" method="POST" enctype="multipart/form-data" class="Loginform-container"  style=" margin-top:100%; background-color: #4A0352">
+    {% csrf_token %}
+
+
+        <label for="file" class="custom-file-upload" id="upload" style="border:transparent;">
+            <i class="fas fa-cloud-upload-alt" ></i>  Select File
+        </label>
+        <input type="file" accept=".xlsx" name="filed1" class="inputfile" id="file" onchange="filename()" required >
+         <button type="submit" class="snip1582" style="margin-bottom: 10%;" >Upload File</button>
+
+
+         {% if messages %}
+            {% for message in messages %}
+                <h1 {% if message.tags %} class="{{ message.tags }}" {% endif %} id="fileExists" style="font-size: 70%; color: red;">
+                    {{message}}
+                </h1>
+            {% endfor %}
+         {% endif %}
+    </form>
+
+
+</div>
+
+
+
+
+<div class="main" style="background-color: pink; max-width: 100%;">
+
+<div class="dropdown" style="float: right; margin-right: 7%; ">
+  <button onclick="myFunction()" id="drop_btn" class="dropbtn" style="font-size: 120%; background-color: white; color: purple" >{{Name}}  <i class="fas fa-caret-down"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#about">Change Password</a>
+    <a href="logout">LogOut</a>
+  </div>
+</div>
+
+
+</div>
+
+
+<div>
+     <table id="File_Table" style="margin-top: 10%;float:left;margin-left: 25%;width:70%;">
+        <tr style="border-bottom: 1px solid purple;">
+            <th style="text-align: left; font-size: 150%" >File Name</th>
+            <th style="padding-left:2%; font-size: 150%">Size</th>
+            <th></th>
+        </tr>
+
+
+        {% for file in Files %}
+        <tr onloadstart="Uploaded()">
+            <td style="width: 50%; font-weight: 2rm; color: purple;"><b>{{file.File_Name}}</b></td>
+            <td style="width: 15%; padding-left: 2.5%;">{{file.File_Size}} MB</td>
+            <td style="width:   ">
+            <a href="/media/{{file.File_Path}}" style="color:white"><button class="snip1582" style="margin-right: 10%; background-color: purple;">Download</button></a>
+
+
+
+              <a href= "{% url 'Web_Insights' file.File_Path %}" ><button class="snip1582" style="background-color: purple; width: 28%" >Insights</button></a>
+
+            </td>
+        </tr>
+        {% endfor %}
+
+
+     </table>
+<!-- <h3 id="Fileid" style="margin-left: 33%; position: absolute; margin-top: 25%; color: purple"> No file Uploaded yet, Please Upload xlsx format Files only</h3>
+-->
+
+</div>
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+
+
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+function filename()
+{
+    var fileInput = document.getElementById('file');
+    var filename = fileInput.files[0].name;
+    document.getElementById('upload').innerHTML=filename;
+    document.getElementById('upload').style.borderBottom = "2px solid #FF7B00" ;
+
+}
+function Uploaded()
+{
+  document.getElementById("Fileid").style.display= "none"
+}
+
+</script>
+
+</body>
+</html>
